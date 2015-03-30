@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>skrollr - parallax scrolling for the masses</title>
+
+	<link href="examples/fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="examples/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+	<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+
+	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
+
+	<div id="intro" data-0="opacity:1;top:0%;" data-300="opacity:1; top:-60%;" data-500="opacity:0;top:-100%;">
+    	<div id="glaze">
+          <h1><a href="https://github.com/Prinzhorn/skrollr">skrollr</a></h1>
+          <h2>parallax scrolling for the masses</h2>
+          <p>let's get scrollin' ;-)</p>
+          <p class="arrows">▼&nbsp;▼&nbsp;▼</p>
+        </div>
+	</div>
+<div id="header" data-0="top:100%;margin-top:-30px;" data-500="top:0%;margin-top:0px;"><a href="#top"><div id="backtotop"">top</div></a>
+<div id="nav">
+  <ul>
+      <li>Ready.</li>
+      <li>Set.</li>
+      <li>Swing.</li>
+  </ul>
+</div>
+</div>
+
+	
+    <div id="holes-title" data-300="top:100%; opacity:0" data-800="top:30%;opacity:1;" data-1600="" data-1700="top:10%;opacity:0;">
+    	<h2>Explore the Course</h2>
+        <p>Click a hole to learn more.</p>
+       </div>
+	<div id="holes" data-300="top:100%; opacity:0;" data-800="top:30%;opacity:1;" data-850="left:0px;" data-1600="left:-1000px;" data-1700="top:10%;opacity:0;">
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />
+        <img src="images/80x100.jpg" />	
+	</div>
+
+	<div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+		<h2>all numeric properties</h2>
+		<p>width, height, padding, font-size, z-index, blah blah blah</p>
+	</div>
+
+	
+
+	<div id="download" data-10000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
+		<h2>the end</h2>
+		<p>by the way, you can also animate colors (you did notice this, didn't you?)</p>
+		<p><strong>Now get this thing on <a href="https://github.com/Prinzhorn/skrollr">GitHub</a> and spread the word, it's open source!</strong> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://prinzhorn.github.com/skrollr/" data-via="Prinzhorn">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+		<p>Check out more <a href="https://github.com/Prinzhorn/skrollr/tree/master/examples#examples">examples</a>.</p>
+		<p>Handcrafted by <a href="https://twitter.com/Prinzhorn" class="twitter-follow-button" data-show-count="false">Follow @Prinzhorn</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+	</div>
+
+	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+
+	<script type="text/javascript" src="src/skrollr.js"></script>
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+
+	<script>
+    skrollr.init({
+    smoothScrolling: true,
+    mobileDeceleration: 0.004
+});
+    //@ sourceURL=pen.js
+  </script>
+</body>
+
+</html>
