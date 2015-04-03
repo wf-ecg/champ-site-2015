@@ -2,9 +2,9 @@ html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	font-size: 20px;
 	vertical-align: baseline;
+	font-family: inherit;
 }
 
 article, aside, details, figcaption, figure,
@@ -75,6 +75,15 @@ h4 {
 	margin:1em 0;
 }
 
+.centered {
+	width:100%;
+	height:100%;
+	left:50%;
+	margin-left:-50%;
+	text-align:center;
+}
+
+
 #progress {
 	height:2%;
 	background:#444;
@@ -115,22 +124,28 @@ h4 {
 	background-image:url(images/bubbles3.png);
 }
 #backtotop {
-	width:30px;
-	height:30px;
-	background-color:#bb0826;
-	color:#fff;
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:9px;
-	float:left;
-	text-align:center;
+	width: 60px;
+	height: 50px;
+	background-color: #bb0826;
+	color: #fff;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 40px;
+	float: left;
+	padding-top:10px;;
+	margin-right:20px;
+	text-align: center;
+	overflow:hidden;
 }
 #header {
 	width:100%;
 	min-width:480px;
-	height:30px;
+	height:60px;
 	background-color:#333;
 	color:#fff;
 	z-index:9999;
+}
+#nav {
+	margin-top:20px;
 }
 #nav ul {
 	list-style:none;
@@ -138,7 +153,7 @@ h4 {
 #nav li {
 	list-style:none;
 	display:inline;
-	padding:auto 10px;
+	padding:auto 30px;
 }
 
 #intro {
@@ -150,7 +165,7 @@ h4 {
 	background-size:100%;
 	background-size:cover;
 	 
-	text-align:center;0
+	text-align:center;
 
 	-webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
@@ -174,6 +189,7 @@ h4 {
 	opacity:.8;
 	border:3px solid fff;
 	margin:0 auto;
+	text-align:center;
 }
 
 #holes-title {
@@ -182,32 +198,54 @@ h4 {
 	background-color:#090;
 	color:#fff;
 	margin-top:-100px;
+	padding-left:15px;
 }
 #holes {
-	width:3200px;/*1800+extra space on right */
-	height:130px;
-	left:0%;
-	margin-left:0%;
-	padding-left:15px;
-	padding-top:15px;
-	text-align:center;
-	font-size:150%;
-	background-color:#F60;
-	.transform-origin(50%, 50%);
-	text-align:left;
+	width: 4030px; /* 18*(200+15) */
+	margin-left: 0%;
+	padding-left: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 150%;
+	background-color: #000;
+	text-align: left;
 }
 #holes img {
-	border:3px solid #fff;
+	margin-right:15px;
+	width:200px;
+	height:326px;
+	float:left;
+	opacity:.5;
+	cursor: pointer; cursor: hand;
 }
-#properties {
-	width:100%;
-	height:100%;
-	padding-top:10%;
-	text-align:center;
+#holes img:hover {
+	opacity:1;
+}
 
+#ready, #set, #swing, #true {
+	width: 100%;
+	height: 100%;
+	padding-top: 10%;
+	padding-left:15px;
+	text-align: left;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+#ready h2, #set h2, #swing h2, #true h2 {
+	font-weight:normal;
+}
+#ready h3, #set h3, #swing h3, #true h3 {
+	font-weight:normal;
+	width:80%;
+	min-width:600px;
+	max-width:1200px;
+}
+#ready p, #set p, #swing p, #true p {
+	font-weight:normal;
+	width:80%;
+	min-width:600px;
+	max-width:1200px;
 }
 
 #easing_wrapper {
