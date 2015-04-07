@@ -103,7 +103,7 @@ h4 {
 #header {
 	width:100%;
 	min-width:600px;
-	height:80px;
+	height:60px;
 	background-color:#bb0826;
 	background-image:url(../images/bannerBG.png);
 	background-repeat:repeat-x;
@@ -112,6 +112,13 @@ h4 {
 }
 #navHome {
 	padding-right:15px;
+}
+#navHome img {
+	width:25px;
+	height:auto;
+	border:0;
+	border-style:hidden;
+	margin-top:18px;
 }
 
 #navLeft {
@@ -133,6 +140,12 @@ h4 {
 	font-size:.6em;
 	text-align:right;
 	margin-top:18px;
+}
+#navRight img {
+	width:25px;
+	height:auto;
+	border:0;
+	border-style:hidden;
 }
 
 #navLeft li {
@@ -262,7 +275,7 @@ h4 {
 	background:url(../images/bkgd-set.jpg) no-repeat center;
 }
 #swing {
-	background:url(../images/bkgd-swing.jpg) no-repeat center;
+	background:url(../images/bkgd-swing.jpg) no-repeat top;
 }
 #true {
 	background:url(../images/bkgd-true.jpg) no-repeat bottom;
@@ -290,14 +303,28 @@ h4 {
 	background-color: #000;
 	color:#fff;
 	padding: 15px 15px 1000px 15px;
-	margin-left: -15px;
-	font-family: arial, sans-serif;
-	font-size: .7em;
-	line-height: 1.4em;
+	
 	width:50%;
 	min-width:300px;
 	max-width:600px;
+	overflow:auto;
 }
+.infobox h4 {
+	font-family: arial, sans-serif;
+	font-size: .8em;
+	line-height: 1.3em;
+	font-weight:bold;
+}
+.infobox p, .infobox a {
+	font-family: arial, sans-serif;
+	font-size: .6em;
+	line-height: 1.3em;
+	color:#fff;
+}
+.infobox a:hover {
+	text-decoration:none;
+}
+	
 
 #easing_wrapper {
 	width:100%;
