@@ -214,6 +214,74 @@ h4 {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+#intro-initial {
+	background:url(../images/swing1.jpg) no-repeat center;
+	background-size:100%;
+	background-size:cover;
+	 
+	text-align:center;
+
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#intro-ready {
+	background:url(../images/swing2.jpg) no-repeat center;
+	background-size:100%;
+	background-size:cover;
+	 
+	text-align:center;
+
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#intro-set {
+	background:url(../images/swing3.jpg) no-repeat center;
+	background-size:100%;
+	background-size:cover;
+	 
+	text-align:center;
+
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#intro-swing {
+	background:url(../images/swing4.jpg) no-repeat center;
+	background-size:100%;
+	background-size:cover;
+	 
+	text-align:center;
+
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 #intro #glaze {
 	width:480px;
