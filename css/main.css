@@ -373,25 +373,20 @@ h4 {
 	background-color: #000;
 	color:#fff;
 	padding: 15px 15px 1000px 15px;
-	
 	width:50%;
 	min-width:300px;
 	max-width:600px;
-	overflow:auto;
 }
 .infobox h4 {
-	font-family: arial, sans-serif;
 	font-size: .8em;
 	line-height: 1.3em;
 	font-weight:bold;
 }
 .infobox p {
-	font-family: arial, sans-serif;
 	font-size: .6em;
 	line-height: 1.3em;
 }
 .infobox a {
-	font-family: arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.3em;
 	color:#ff0;
