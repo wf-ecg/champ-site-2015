@@ -21,6 +21,12 @@ html, body {
 body {
 	background-color: #000;
 }
+body.noscroll
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
 
 ol, ul {
 	list-style: none;
