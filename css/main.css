@@ -19,13 +19,7 @@ html, body {
 }
 
 body {
-	background: #eeeeee;
-	background: -webkit-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -moz-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -o-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -ms-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: linear-gradient(top, #eeeeee, #cccccc 100%);
-	background-attachment:fixed;
+	background-color: #000;
 }
 
 ol, ul {
@@ -102,7 +96,7 @@ h4 {
 
 #header {
 	width:100%;
-	min-width:600px;
+	min-width:800px;
 	height:60px;
 	background-color:#bb0826;
 	background-image:url(../images/bannerBG.png);
@@ -110,74 +104,60 @@ h4 {
 	color:#fff;
 	z-index:9999;
 }
-#navHome {
-	padding-right:15px;
-}
-#navHome img {
-	width:25px;
-	height:auto;
-	border:0;
-	border-style:hidden;
-	margin-top:18px;
-}
 
 #navLeft {
-	display: table;
-    height: 55px;
-    width: 35%;
 	float:left;
+	margin-top:18px;
+	width:28%;
+	min-width:280px;
+}
+#navLeft img {
+	width:25px;
+	height:auto;
+	vertical-align:middle;
+	border:0;
+	border-style:hidden;
 	padding-left:15px;
-	background-color:#F66;
+	padding-right:10px;
 }
 
 #navRight {
-	display: table;
-    height: 55px;
-    width: 35%;
 	float:right;
+	text-align:right;
+	margin-top:18px;
+}
+#navRight span {
+	display:inline-block;
+	padding:0px;
 	padding-right:15px;
 	font:Georgia, "Times New Roman", Times, serif;
 	font-size:.6em;
-	text-align:right;
-	margin-top:18px;
 }
 #navRight img {
 	width:25px;
 	height:auto;
+	vertical-align:middle;
 	border:0;
 	border-style:hidden;
+	padding-right:15px;
 }
 
-#navLeft li {
+#navLeft span {
+	margin:0 2%;
 	font:Georgia, "Times New Roman", Times, serif;
 	font-size:.6em;
-	display: table-cell;
-    height: 55px;
-    width: 25%;
-    line-height: 55px;
-    text-align: right;
-    background: #cccccc;
-    border-right: 1px solid #fff;
-}
-
-#navRight li {
-	font:Georgia, "Times New Roman", Times, serif;
-	font-size:.6em;
-	display: table-cell;
-    height: 55px;
-    width: 40%;
-    line-height: 55px;
-    text-align: right;
-    background: #bb0826;
-	
-    /*border-right: 1px solid #fff; */
 }
 
 #headerLogo {
-	width:150px;
-	height:60px;
+	width:30%;
+	min-width:150px;
+	max-width:380px;
+	height:80px;
 	margin-left:auto;
-	margin-right:auto;	
+	margin-right:auto;
+	margin-top:10px;
+	vertical-align:middle;
+	
 }
 #headerLogo img {
 	width:100%;
@@ -201,7 +181,6 @@ h4 {
 	background:url(../images/bkgd-intro.jpg) no-repeat center;
 	background-size:100%;
 	background-size:cover;
-	 
 	text-align:center;
 
 	-webkit-transform-origin:0 0;
@@ -383,11 +362,16 @@ h4 {
 	line-height: 1.3em;
 	font-weight:bold;
 }
-.infobox p, .infobox a {
+.infobox p {
 	font-family: arial, sans-serif;
 	font-size: .6em;
 	line-height: 1.3em;
-	color:#fff;
+}
+.infobox a {
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.3em;
+	color:#ff0;
 }
 .infobox a:hover {
 	text-decoration:none;
