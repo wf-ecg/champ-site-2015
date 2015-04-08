@@ -1,3 +1,9 @@
+/* ARCHER SCREENSMART
+500: book
+600: medium
+700: semibold
+*/
+
 html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
 	margin: 0;
 	padding: 0;
@@ -30,17 +36,20 @@ body.noscroll
 
 ol, ul {
 	list-style: none;
+	font-family: "myriad-pro", sans-serif;
 }
 
 p {
 	margin:1em 0;
 	line-height:1.1em;
 	color:#fff;
+	font-family: "myriad-pro", sans-serif;
 }
 
 q {
 	font-style:italic;
 	color:#333;
+	font-family: "myriad-pro", sans-serif;
 }
 
 h1 {
@@ -73,12 +82,16 @@ h3 {
 	color:#fff;
 	font-size:1.41em;
 	margin:1em 0;
+	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
+	font-weight: 700;
 }
 
 h4 {
 	color:#fff;
 	font-size:1.11em;
 	margin:1em 0;
+	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
+	font-weight: 700;
 }
 
 .centered {
