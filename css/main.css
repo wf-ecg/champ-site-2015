@@ -79,6 +79,7 @@ h3 {
 	font-weight: 600;
 	line-height:1.2em;
 }
+h3:first-child {margin-top:0;}
 
 h4 {
 	color:#fff;
@@ -329,7 +330,7 @@ h4 {
 }
 
 
-#ready, #set, #swing, #true {
+#ready, #set, #swing, #true, #close {
 	left:50%;
 	margin-left:-50%;
 	width: 100%;
@@ -354,19 +355,22 @@ h4 {
 #true {
 	background:url(../images/bkgd-true.jpg) no-repeat bottom;
 }
-#ready h2, #set h2, #swing h2, #true h2 {
+#close {
+	background:url(../images/bkgd-true.jpg) no-repeat bottom;
+}
+#ready h2, #set h2, #swing h2, #true h2, #close h2 {
 	font-weight:normal;
 	display:block;
 	width:100%;
 	white-space: nowrap;
 }
-#ready h3, #set h3, #swing h3, #true h3 {
+#ready h3, #set h3, #swing h3, #true h3, #close h3 {
 	font-weight:normal;
 	width:80%;
 	min-width:600px;
 	max-width:1200px;
 }
-#ready p, #set p, #swing p, #true p {
+#ready p, #set p, #swing p, #true p, #close p {
 	font-weight:normal;
 	width:80%;
 	min-width:600px;
