@@ -44,35 +44,27 @@ $( document ).ready(function() {
 				  //document.getElementById('viewMobile').style.display = "inline";
 			  }
 
-			$(".iframe").colorbox({iframe:true, width:"854", height:"508", scrolling:false,
-	  	 			  onOpen:function(){ },
-					  onLoad:function(){ },
-					  onComplete:function(){ pauseScrolling(); },
-					  onCleanup:function(){ },
-					  onClosed:function(){ resumeScrolling(); }
-				  });
-				  
+			
 				  
 			var s = skrollr.init({
-	  
+	  				smoothScrolling: true,
+					mobileDeceleration: 0.004,
 					forceHeight:true,
 					render: function(data) {
 						//document.querySelector('.scrollerpos').innerHTML = data.curTop;
 						  clearTimeout(timer);
 						  //scroll position detection
 						  if ( ! boxDone ) {
-							  if ((chapter != "caroline") && (data.curTop >= scrollPoint_caroline) && (data.curTop < scrollPoint_robert)) {
-							  menuUpdate('caroline');
+							  if ((chapter != "ready") && (data.curTop >= scrollPoint_ready) && (data.curTop < scrollPoint_set)) {
+							  menuUpdate('ready');
 							  }
-							  else if ((chapter != "robert") && (data.curTop >= scrollPoint_robert) && (data.curTop < scrollPoint_monique)) {
-							  menuUpdate('robert');
+							  else if ((chapter != "set") && (data.curTop >= scrollPoint_set) && (data.curTop < scrollPoint_swing)) {
+							  menuUpdate('set');
 							  }
-							  else if ((chapter != "monique") && (data.curTop >= scrollPoint_monique) && (data.curTop < scrollPoint_victor)) {
-							  menuUpdate('monique');
+							  else if ((chapter != "swing") && (data.curTop >= scrollPoint_swing)) {
+							  menuUpdate('swing');
 							  }
-							  else if ((chapter != "victor") && (data.curTop >= scrollPoint_victor) && (data.curTop < scrollPoint_close)) {
-							  menuUpdate('victor');
-							  }
+							 
 							  
 						  }
 						  else if (boxDone ) {
@@ -89,42 +81,20 @@ $( document ).ready(function() {
 				  s.animateTo(top);
 	
 		function menuUpdate(chapter) {
-			
-			$('#cssmenu li').removeClass('active');
-			$('#cssmenu #'+chapter).closest('li').addClass('active');	
-			var checkElement = $('#cssmenu #'+chapter).next();
-			currentId = $('#cssmenu #'+chapter).attr('id');
-			
-			if((checkElement.is('ul')) && (checkElement.is(':visible')) && (chapter == 'intro')) {
-			  $('#cssmenu #'+chapter).closest('li').removeClass('active');
-			  checkElement.slideUp('normal');
-			}
-			
-			if((checkElement.is('ul')) && (checkElement.is(':visible')) && (chapter == 'close')) {
-			  $('#cssmenu #'+chapter).closest('li').removeClass('active');
-			  checkElement.slideUp('normal');
-			}
-			
-			if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-			  $('#cssmenu ul ul:visible').slideUp('normal');
-			  checkElement.slideDown('normal');
-			}
-			
+			$('#navLeft span').removeClass('active');
+			$('#navLeft #profileButton_'+chapter).addClass('active');	
+			var checkElement = $('#navLeft #'+chapter).next();
+			currentId = $('#navLeft #'+chapter).attr('id');
 	  }
 	  
-  	$('#cssmenu > ul > li > a').click(function() {
+  	$('#navLeft > span').click(function() {
+		alert(clicked);
 			currentId = $(this).attr('id');
-			var chapterPosition = window['scrollPoint_' + currentId];
-			window.scrollTo(0,chapterPosition);	
-	  });
-	  
-	$('#profileSnapshots div').click(function() {
-			
-			currentId = $(this).attr('id');
-			var result = currentId.slice(14);
+			var result = currentId.slice(15);
 			var chapterPosition = window['scrollPoint_' + result];
 			window.scrollTo(0,chapterPosition);	
 	  });
+	  
 	  	//hide body and show preloader until all elements loaded
   		$('body').addClass('visible');
 		$('div#preloaderImage').removeClass('visible');

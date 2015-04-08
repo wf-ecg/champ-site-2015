@@ -21,7 +21,7 @@ footer, header, hgroup, menu, nav, section {
 html, body {
 	line-height: 1;
 	min-height:100%;
-	font-family:Artial, Verdana, sans-serif;
+	font-family:Arial, Verdana, sans-serif;
 }
 
 body {
@@ -134,11 +134,12 @@ h4 {
 	width:28%;
 	min-width:250px;
 }
-#navLeft span {
+#navLeft > span {
 	margin:0px 4%;
-	font:Georgia, "Times New Roman", Times, serif;
+	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-size:.6em;
 }
+
 #navLeft img {
 	width:18px;
 	height:auto;
@@ -158,7 +159,7 @@ h4 {
 	display:inline-block;
 	padding:0px;
 	padding-right:15px;
-	font:Georgia, "Times New Roman", Times, serif;
+	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-size:.6em;
 }
 #navRight img {
@@ -177,7 +178,13 @@ h4 {
 .headerIcons:hover {
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
+	cursor: pointer; cursor: hand;
 }
+
+#navLeft > span.active {
+  font-family: "myriad-pro", sans-serif;
+}
+
 
 #headerLogo {
 	width:30%;
@@ -293,14 +300,6 @@ h4 {
 	box-sizing: border-box;
 }
 
-#holes-title {
-	width:100%;
-	height:100px;
-	background-color:#090;
-	color:#fff;
-	margin-top:-100px;
-	padding-left:15px;
-}
 #holes {
 	width: 4030px; /* 18*(200+15) */
 	margin-left: 0%;
@@ -309,8 +308,8 @@ h4 {
 	padding-bottom: 5px;
 	font-size: 150%;
 	background-color:#000;
-	opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+	opacity: 0.1;
+    filter: alpha(opacity=10); /* For IE8 and earlier */
 	text-align: left;
 }
 #holes img {

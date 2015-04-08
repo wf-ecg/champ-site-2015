@@ -23,7 +23,7 @@
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/lightbox.min.js"></script>
 	<script src="js/jquery.fittext.js"></script>
-	 <script src="js/ready.js"></script>
+	<script src="js/ready.js"></script>
 	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6819872/783664/css/fonts.css" />
 	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
 	<link href="css/main.css" rel="stylesheet" type="text/css" />
@@ -59,9 +59,9 @@
 		<div id="navLeft">
         	<a href="#top"><img id="backToTop" src="images/btn_home.gif" class="headerIcons" alt="back to top" border="0" width="30" height="30" align="left" /></a>
 		
-				<a href="#ready"><span>READY.</span></a>
-				<a href="#set"><span>SET.</span></a>
-				<a href="#swing"><span>SWING.</span></a>
+				<span class="profileSnapshot headerIcons" id="profileButton_ready">READY.</span>
+				<span class="profileSnapshot headerIcons" id="profileButton_set">SET.</span>
+				<span class="profileSnapshot headerIcons" id="profileButton_swing">SWING.</span>
 			
 		</div><!-- end nav -->
 		
@@ -100,7 +100,7 @@
 
 	<div id="swing" data-4800="top:100%;" data-5100="top:0%;" data-7800="display:block;" data-8100="top:-100%;display:none;">
 			<div data-4900="top:30%;opacity:0" data-5200="top:15%;opacity:1" data-7800="top:15%;opacity:1;" data-8100="top:0%;opacity:0;">
-				<h2 id="swing-headline">HERE IS WHERE YOUR <strong>SWING</strong> AND SKILL<br>WILL BE PUT TO THE TEST.</h2>
+				<h2 id="swing-headline">HERE IS WHERE YOUR <strong>SWING</strong><br> AND SKILL WILL BE PUT TO THE TEST.</h2>
 				<p>Preview the Quail Hollow course and prepare yourself<br>for what will be an unforgettable day on the links.</p>
 			</div>
 	</div><!-- end swing -->
@@ -108,7 +108,7 @@
 	<div id="holes" data-5100="bottom:-332px; opacity:0;left:0px;" data-5200="bottom:0px;opacity:.8;left:0px;margin-left:0%" data-7800="bottom:0px;left:-4030px; margin-left:100%;" data-8100="bottom:200px;opacity:0;left:-4030px; margin-left:100%;">
         <script language="javascript";>
 			for (i = 1; i < 19; i++) { 
-			document.write("<a href=\"images/hole" +i + ".jpg\" data-lightbox=\"courseholes\" data-title=\"Hole" +i + "\"><img src=\"images/previews/hole" +i + ".png\" /></a>");
+			document.write("<a href=\"images/hole-detail/detail_" +i + ".png\" data-lightbox=\"courseholes\" data-title=\"Hole" +i + "\"><img src=\"images/hole-previews/hole" +i + ".png\" /></a>");
 			}
 		</script>
     </div><!-- end holes -->
@@ -134,39 +134,43 @@
 	<script type="text/javascript" src="js/skrollr.ie.js"></script>
 	<![endif]-->
 	
-<script>
-	$(window).on('resize', function () {
-		var width = $(window).width(),
-		height = $(window).height();
-		if (width < 640) {
-			window.location = "mobile.html";
-		}
-	});
-
-	
-    skrollr.init({
-    smoothScrolling: true,
-    mobileDeceleration: 0.004
-	});
-    //@ sourceURL=pen.js
-	
-	$("#ready-headline").fitText(2.5, {
-            minFontSize: '35px',
-            maxFontSize: '80px'
-        });
-	$("#set-headline").fitText(2.5, {
-            minFontSize: '35px',
-            maxFontSize: '80px'
-        });
-	$("#swing-headline").fitText(2.5, {
-            minFontSize: '35px',
-            maxFontSize: '80px'
-        });
-	$("#true-headline").fitText(2.5, {
-            minFontSize: '35px',
-            maxFontSize: '80px'
-        });
-	</script>
+		<script>
+			$(window).on('resize', function () {
+				var width = $(window).width(),
+				height = $(window).height();
+				if (width < 640) {
+					window.location = "mobile.html";
+				}
+			});
+		
+			
+			$("#ready-headline").fitText(2.5, {
+					minFontSize: '35px',
+					maxFontSize: '80px'
+				});
+			$("#set-headline").fitText(2.5, {
+					minFontSize: '35px',
+					maxFontSize: '80px'
+				});
+			$("#swing-headline").fitText(2.5, {
+					minFontSize: '35px',
+					maxFontSize: '80px'
+				});
+			$("#true-headline").fitText(2.5, {
+					minFontSize: '35px',
+					maxFontSize: '80px'
+				});
+				
+			
+			var timer;
+			var chapter = 'intro';
+			var currentId = 'ready';
+			var scrollPoint_ready = 3700;
+			var scrollPoint_set = 4400;
+			var scrollPoint_swing = 5100;
+			var scrollPoint_true = 8200;
+			var boxDone = false;
+		</script>
 	
   
 </body>
