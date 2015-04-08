@@ -58,14 +58,7 @@ h1 {
 	color:#fff;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-weight: 700;
-}
-
-h1 > small {
-	text-align:right;
-	display:inline-block;
-	font-size:.71em;
-	text-indent:15em;
-	color:#444;
+	
 }
 
 h2 {
@@ -76,14 +69,12 @@ h2 {
 	font-weight: 700;
 }
 
-h2:first-child {margin-top:0;}
-
 h3 {
 	color:#fff;
 	font-size:1.41em;
 	margin:1em 0;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 h4 {
@@ -91,7 +82,7 @@ h4 {
 	font-size:1.11em;
 	margin:1em 0;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .centered {
@@ -302,6 +293,7 @@ h4 {
 	box-sizing: border-box;
 }
 
+
 #holes {
 	width: 3740px; /* 18*(200+15) */
 	margin-left: 0%;
@@ -332,6 +324,7 @@ h4 {
     filter: alpha(opacity=100); /* For IE8 and earlier */
 	background-color:#007337;
 }
+
 
 #ready, #set, #swing, #true {
 	left:50%;
@@ -381,7 +374,7 @@ h4 {
 	background-color: #000;
 	color:#fff;
 	padding: 15px 15px 1000px 15px;
-	width:50%;
+	width:70%;
 	min-width:300px;
 	max-width:600px;
 }
@@ -390,13 +383,15 @@ h4 {
 	line-height: 1.3em;
 	font-weight:bold;
 }
-.infobox p {
+.infobox span {
 	font-size: .6em;
-	line-height: 1.3em;
+	margin:0px;
+	padding:0px;
+	line-height:2px;
 }
+
 .infobox a {
 	font-size: 1em;
-	line-height: 1.3em;
 	color:#ff0;
 }
 .infobox a:hover {
