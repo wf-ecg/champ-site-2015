@@ -328,7 +328,7 @@ h4 {
 .holePreview:hover {
 	opacity: 1;
     filter: alpha(opacity=100); /* For IE8 and earlier */
-	background:none;
+	background-color:#007337;
 }
 
 #ready, #set, #swing, #true {
