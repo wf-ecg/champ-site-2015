@@ -137,8 +137,15 @@ h4 {
 #navLeft > span {
 	margin:0px 4%;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
+	font-weight:600;
 	font-size:.6em;
 }
+#navLeft > span.active {
+  opacity: 1.0;
+  filter: alpha(opacity=100); 
+  font-weight:700;
+}
+
 
 #navLeft img {
 	width:18px;
@@ -180,12 +187,6 @@ h4 {
     filter: alpha(opacity=100); /* For IE8 and earlier */
 	cursor: pointer; cursor: hand;
 }
-
-#navLeft > span.active {
-  font-family: "myriad-pro", sans-serif;
-  font-size:.7em;
-}
-
 
 #headerLogo {
 	width:30%;
