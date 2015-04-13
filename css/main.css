@@ -22,7 +22,7 @@ footer, header, hgroup, menu, nav, section {
 html, body {
 	line-height: 1;
 	min-height:100%;
-	font-family:Arial, Verdana, sans-serif;
+	font-family: "myriad-pro", sans-serif;
 }
 
 body {
@@ -141,7 +141,8 @@ h4 {
 	margin:0px 4%;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-weight:600;
-	font-size:.6em;
+	font-size:11px;
+	font-size:1.1rem;
 }
 #navLeft > span.active {
   opacity: 1.0;
@@ -170,7 +171,8 @@ h4 {
 	padding:0px;
 	padding-right:15px;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
-	font-size:.6em;
+	font-size:11px;
+	font-size:1.1rem;
 }
 #navRight img {
 	width:25px;
@@ -347,7 +349,10 @@ h4 {
 	left:50%;
 	margin-left:-50%;
 	background-size:100%;
-	background-size:cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	padding-top:10%;
 	padding-left:30px;
 
@@ -483,7 +488,8 @@ z-index:9999;
 font-family: "myriad-pro", sans-serif;
 line-height:40px;
 padding-left:30px;
-font-size:.6em;
+font-size:11px;
+font-size:1.1rem;
 }
 
 .twitter-share-button, .twitter-follow-button {
