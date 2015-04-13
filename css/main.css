@@ -45,8 +45,8 @@ p {
 	line-height:1.1em;
 	color:#fff;
 	font-family: "myriad-pro", sans-serif;
-	font-size:16px;
-	font-size:1.6rem;
+	font-size:20px;
+	font-size:2rem;
 }
 
 q {
@@ -350,6 +350,7 @@ h4 {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+#set {height:150%;}
 #ready {
 	background:url(../images/bkgd-ready.jpg) no-repeat center;
 }
@@ -393,14 +394,16 @@ h4 {
 	max-width:1000px;
 }
 .infobox h4 {
-	font-size: .8em;
+	font-size: 15px;
+	font-size: 1.5em;
 	line-height: 1.3em;
 	font-weight:bold;
 	margin-top:0px;
 }
 #infoText {
-	font-size: .6em;
-	line-height:1.2em;
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height:1.4em;
 }
 
 .infobox a {
