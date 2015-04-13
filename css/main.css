@@ -58,12 +58,13 @@ q {
 h1 {
 	font-size:60px;
 	font-size:6rem;
-	margin:0;
+	margin:0px;
 	color:#fff;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-weight: 700;
+	white-space: nowrap;
 }
-h1:first-child {margin-top:0;}
+h1:first-child {margin-top:0px;}
 
 h2 {
 	color:#fff;
@@ -213,7 +214,10 @@ h4 {
 	background-image:url(../images/proam_logo_monday.png);
 	background-repeat:no-repeat;
 }
-	
+
+.fittext {
+	width:100%;
+}
 
 #intro {
 	width:100%;
@@ -350,7 +354,6 @@ h4 {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-#set {height:150%;}
 #ready {
 	background:url(../images/bkgd-ready.jpg) no-repeat center;
 }
@@ -366,6 +369,7 @@ h4 {
 #close {
 	background:url(../images/bkgd-true.jpg) no-repeat bottom;
 }
+
 #ready h2, #set h2, #swing h2, #true h2, #close h2 {
 	font-weight:normal;
 	display:block;
@@ -388,10 +392,11 @@ h4 {
 .infobox {
 	background-color: #000;
 	color:#fff;
-	padding: 15px 15px 1000px 15px;
+	padding: 15px 15px 50px 15px;
 	width:80%;
 	min-width:650px;
-	max-width:1000px;
+	max-width:1400px;
+	margin-left:-15px;
 }
 .infobox h4 {
 	font-size: 15px;
