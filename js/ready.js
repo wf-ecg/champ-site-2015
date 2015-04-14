@@ -40,6 +40,15 @@ if (W.window !== window || !C.debug) {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*globals menuUpdate, skrollr, */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    var timer,
+    chapter = 'intro',
+    currentId = 'ready',
+    scrollPoint_ready = 3700,
+    scrollPoint_set = 4400,
+    scrollPoint_swing = 5100,
+    scrollPoint_true = 8200,
+    boxDone = false;
+
 $( document ).ready(function() {
 
     //check if coming from mobile version -- if so, allow
@@ -140,3 +149,20 @@ $( document ).ready(function() {
 
 
 });
+
+    //$(window).on('resize', function () {
+    //    var width = $(window).width(),
+    //    height = $(window).height();
+    //    if (width < 640) {
+    //    window.location = "mobile.html";
+    //    }
+    //});
+    $(".fitTextIntro").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
+    $(".fittext1").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
+    $(".fittext2").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
+    $(".fittext3").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
+    $(".fittext4").fitText(2.5, { minFontSize: '15px', maxFontSize: '75px' })
+    $(".fittext5").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
+    //$("h1").fitText(2.4, { minFontSize: '20px', maxFontSize: '100px' })
+    //$("h2").fitText(2.4, { minFontSize: '15px', maxFontSize: '75px' })
+
