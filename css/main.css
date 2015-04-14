@@ -27,6 +27,7 @@ html, body {
 
 body {
 	background-color: #000;
+	visibility:hidden; /*body hidden until all scripts loaded*/
 }
 body.noscroll
 {
