@@ -131,11 +131,12 @@
                  data-7800="bottom:-5px;left:-3740px; margin-left:100%;"
                  data-8100="bottom:200px;opacity:0;left:-3740px; margin-left:100%;">
                 <script>
-                    for (var i = 1; i < 19; i++) {
-                        document.write("<div class=\"holePreview\"><a href=\"images/hole-detail/detail_"
-                            + i + ".png\" data-lightbox=\"courseholes\" data-title=\"Hole"
-                            + i + "\"><img src=\"images/hole-previews/hole"
-                            + i + ".png\" /></a></div>");
+                    var i;
+                    for (i = 1; i < 19; i++) {
+                        document.write('<div class="holePreview"><a href="images/hole-detail/detail_'
+                            + i + '.png" data-lightbox="courseholes" data-title="Hole'
+                            + i + '"><img src="images/hole-previews/hole'
+                            + i + '.png" /></a></div>');
                     }
                 </script>
             </div><!-- end holes -->
