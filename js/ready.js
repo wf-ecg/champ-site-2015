@@ -88,14 +88,12 @@ $( document ).ready(function() {
 	  }
 	  
   	$('#navLeft > span').click(function() {
-		alert(clicked);
-			currentId = $(this).attr('id');
-			var result = currentId.slice(15);
-			var chapterPosition = window['scrollPoint_' + result];
-			window.scrollTo(0,chapterPosition);	
+		currentId = $(this).attr('id');
+		var result = currentId.slice(14);
+		var chapterPosition = window['scrollPoint_' + result];
+		window.scrollTo(0,chapterPosition);	
 	  });
 	  
-	  	//hide body and show preloader until all elements loaded
-  		
-	 
+	  	
+	
 });
