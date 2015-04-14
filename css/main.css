@@ -92,14 +92,17 @@ h3 {
 	margin:1em 0;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-weight: 600;
-	line-height:1.2em;
+	line-height:1.3em;
 	text-shadow: 2px 2px 8px #000000;
   	-moz-text-shadow: 2px 2px 8px #000000;
   	-webkit-text-shadow: 2px 2px 8px #000000;
- 	 filter: dropshadow(color=#cccccc, offx=2, offy=2);
  	 display: block; /* that's the important part */
 }
 h3:first-child {margin-top:0;}
+.ie8 h3 {
+	filter: -;
+	text-shadow:none; /*remove ie8 filters */
+}
 
 h4 {
 	color:#fff;
@@ -216,12 +219,19 @@ h4 {
 	height:auto;
 }
 
-#proamLogo {
+/*#proamLogo {
 	width: 100%;
 	height: 100%;
 	background-size:100%;
+	background-size:cover;
 	background-image:url(../images/proam_logo_monday.png);
 	background-repeat:no-repeat;
+	text-align:center;
+}*/
+#proamLogo img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
 }
 
 .fittext {
@@ -233,7 +243,7 @@ h4 {
 	height:100%;
 	left:50%;
 	margin-left:-50%;
-	background:url(../images/bkgd-intro.jpg) no-repeat center;
+	background:url(../images/bkgd-intro.jpg) no-repeat bottom;
 	background-size:100%;
 	background-size:cover;
 	text-align:center;
@@ -249,7 +259,7 @@ h4 {
 	box-sizing: border-box;
 }
 #intro-initial {
-	background:url(../images/swing1.jpg) no-repeat center;
+	background:url(../images/swing1.jpg) no-repeat bottom;
 	background-size:100%;
 	background-size:cover;
 	 
@@ -266,7 +276,7 @@ h4 {
 	box-sizing: border-box;
 }
 #intro-ready {
-	background:url(../images/swing2.jpg) no-repeat center;
+	background:url(../images/swing2.jpg) no-repeat bottom;
 	background-size:100%;
 	background-size:cover;
 	 
@@ -283,7 +293,7 @@ h4 {
 	box-sizing: border-box;
 }
 #intro-set {
-	background:url(../images/swing3.jpg) no-repeat center;
+	background:url(../images/swing3.jpg) no-repeat bottom;
 	background-size:100%;
 	background-size:cover;
 	 
@@ -300,7 +310,7 @@ h4 {
 	box-sizing: border-box;
 }
 #intro-swing {
-	background:url(../images/swing4.jpg) no-repeat center;
+	background:url(../images/swing4.jpg) no-repeat bottom;
 	background-size:100%;
 	background-size:cover;
 	 
@@ -417,6 +427,10 @@ h4 {
 	max-width:1400px;
 	margin-left:-15px;
 }
+.ie8 .infobox {
+	background-color: #ff0000;
+	margin-left:100px;
+}
 .infobox h4 {
 	font-size: 15px;
 	font-size: 1.5em;
@@ -432,7 +446,7 @@ h4 {
 
 .infobox a {
 	font-size: 1em;
-	color:#ff0;
+	color: #fcc60a;
 }
 .infobox a:hover {
 	text-decoration:none;
@@ -502,5 +516,3 @@ font-size:1.1rem;
 .twitter-share-button, .twitter-follow-button {
 	vertical-align:middle;
 }
-
-
