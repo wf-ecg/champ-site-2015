@@ -233,7 +233,8 @@ h4 {
 	width: auto;
 	height: auto;
 }
-
+.fittext {
+	width:100%;}
 
 #intro {
 	width:100%;
