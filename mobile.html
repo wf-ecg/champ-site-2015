@@ -1,257 +1,259 @@
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-skrollr">
+
 <head>
-<meta charset="UTF-8" />
-<title>Wells Fargo Championship Pro-Am</title>
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-<META HTTP-EQUIV="Expires" CONTENT="-1">
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<link href="css/mobileStyles.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6819872/783664/css/fonts.css" />
 
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <meta charset="UTF-8">
 
-ga('create', 'UA-5483042-1', 'auto');  // Replace with your property ID.
-ga('send', 'pageview');
+  <title>Wells Fargo Championship Pro-Am</title>
 
-</script>
-<!-- End Google Analytics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'vrs1lml',
+      scriptTimeout: 3000
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6819872/783664/css/fonts.css" />
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+
+  <style>
+  html, body {
+  height: 100%;
+  margin: auto 1em;
+  font-family: "myriad-pro", sans-serif;
+}
+h1, h2 {
+	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
+	font-weight: 700;
+}
+.skrollr-desktop body {
+  height: 100% !important;
+}
+
+.section {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.section-50, .section-4 {
+  height: 50%;
+  top: -50%;
+}
+
+.section-100, .section-1, .section-2, .section-3 {
+  height: 100%;
+  top: -100%;
+}
+
+.image {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image.skrollable-between {
+  display: block;
+}
+
+.image-50, .section-4 .image {
+  height: 200%;
+  top: -50%;
+}
+
+.image-100, .section-1 .image, .section-2 .image,  .section-3 .image {
+  height: 100%;
+  top: 0;
+}
+
+.no-skrollr .section {
+  display: none !important;
+}
+
+#skrollr-body {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.gap {
+  background: transparent center no-repeat;
+  background-size: cover;
+}
+
+.skrollr .gap {
+  background: transparent !important;
+}
+
+.gap-50 {
+  height: 50%;
+}
+
+.gap-100 {
+  height: 100%;
+}
+
+.section-1 .image {
+  background: url(images/mobile-ready.jpg) no-repeat center;
+}
+
+.section-2 .image {
+  background: url(images/mobile-set.jpg) no-repeat center;
+}
+
+.section-3 .image {
+  background: url(images/mobile-swing.jpg) no-repeat center;
+}
+
+.section-4 .image {
+  background: url(images/mobile-true.jpg) no-repeat center;
+}
+
+  </style>
+
+  <script>
+    window.console = window.console || function(t) {};
+    window.open = function(){ console.log('window.open is disabled.'); };
+    window.print = function(){ console.log('window.print is disabled.'); };
+    // Support hover state for mobile.
+    if (false) {
+      window.ontouchstart = function(){};
+    }
+  </script>
 
 </head>
 
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body>
 
-<!-- <div class="disclosure">Viewing mobile version | <a href="index.html?desktop">View desktop version</a></div> -->
-
-<div class="main-container">
-		<div class="imgBlock" id="chapter1">
-				<h2>READY.<br />
-					SET.<br>
-					SWING.</h2>
-		</div>
-		<!-- end chapter1 -->
-		
-		<div class="imgBlock" id="chapter2">
-				<h2>ARE YOU READY
-						TO EXPERIENCE ONE OF THE<br />
-						FINEST SPORTS VENUES<br />
-						IN THE SOUTH EAST.</h2>
-				<p>Quail Hollow Club is one of the finest championship golf courses in the country. The course at Quail Hollow blends the imagination and craftsmanship of golf greats like George Cobb, Arnold Palmer, and Tom Fazio with a majestic landscape to create a golf experience that is as challenging as it is beautiful.</p>
-		</div>
-		<!-- end chapter2 -->
-		
-		<div class="imgBlock" id="chapter3">
-				<h2>GET SET FOR GREAT PLAY</h2>
-				<p>The Wells Fargo Championship traditionally draws a field of some of the most dynamic names in professional golf so you will be teamed with golfers who epitomize the best of the sport.</p>
-		</div>
-		<!-- end chapter3 -->
-		
-		
-		<div class="imgBlock" id="chapter3reminders">
-				<h2>QUICK REMINDERS</h2>
-				<p>Check-in will be on the lower level of The Ballantyne Hotel & Lodge before the Draft Party reception. If you are unable to attend the Draft Party, you may register Monday May 11th in the Quail Grill at Quail Hollow Club.
-
-Your Monday Pro-Am credential will be issued to you at the Draft Party Registration. Please wear your credential at all times while on tournament grounds. The credential will be valid for tournament entry the entire week and provide you access to the Clubhouse and Quail Hollow Club grounds.
-
-The play format will be One Best Ball Net and Par is Your Partner will be enforced. If you can no longer make a net par on your ball, you must pick up and proceed with your team as they finish the hole. Golf carts will not be used.
-
-Insta-Plak will be taking team photos on Pro-Am day and will distribute them on the 9 green and the 18 green at the conclusion of your round.
-
-If you have any questions, please contact Gwen Crow at 704-554-8029 or email her at gwen@wellsfargochampionship.com.</p>
-		</div>
-		
-		<div class="imgBlock" id="chapter4">
-				<h2>HERE IS WHERE YOUR SWING AND SKILL WILL BE PUT TO THE&nbsp;TEST.</h2>
-				<p>Preview the Quail Hollow course and prepare yourself for what will be an unforgettable day on the links.</p>
-		</div>
-		<!-- end chapter4 -->
-		
-		
-		<div id="carolineFooter"></div>
-		<!-- end caroline --> 
-		
-		<!-- begin robert -->
-		<div id="robertTop"></div>
-		<div class="imgBlock" id="robert1">
-				<h2>MEET<br>
-						ROBERT</h2>
-				<h3>IT professional; in-demand skills; gamer.</h3>
-				<h3>He wants to move his 401(k) to each new&nbsp;employer.</h3>
-				<h3>He’ll roll over his 401(k) to a new employer’s&nbsp;plan.</h3>
-		</div>
-		<div class="imgBlock" id="robert2">
-				<h2>ADVANTAGES</h2>
-				<ul>
-						<li>Assets retain tax-advantaged growth potential.</li>
-						<li>Easier tracking and management of combined assets.</li>
-						<li>Loans may be allowed.</li>
-						<li>Assets typically protected from creditor claims.</li>
-				</ul>
-				<h2>KEEP IN MIND</h2>
-				<ul>
-						<li>Possible waiting period to move money to new plan.</li>
-						<li>New employer will control:
-								<ul>
-										<li>Investment options.</li>
-										<li>Access to retirement savings.</li>
-								</ul>
-						</li>
-				</ul>
-		</div>
-		
-		<div id="robertFooter"></div>
-		<!-- end robert --> 
-		
-		<!-- begin monique -->
-		<div id="moniqueTop"></div>
-		<div class="imgBlock" id="monique1">
-				<h2>MEET<br>
-						MONIQUE</h2>
-				<h3>Entrepreneur; percolates&nbsp;ideas; Espresso&nbsp;pro.</h3>
-				<h3>She doesn’t have time to worry about her 401(k) right&nbsp;now.</h3>
-				<h3>She’s leaving her 401(k) in her former employer’s&nbsp;plan.</h3>
-		</div>
-		<div class="imgBlock" id="monique2">
-				<h2>ADVANTAGES</h2>
-				<ul>
-						<li>No immediate action required.</li>
-						<li>Assets retain tax-advantaged growth potential.</li>
-						<li>Access to investments not available outside of plan.</li>
-						<li>Assets typically protected from creditor claims.</li>
-				</ul>
-				<h2>KEEP IN MIND</h2>
-				<ul>
-						<li>Additional contributions typically not allowed.</li>
-						<li>Must maintain relationship with former employer.</li>
-						<li>Plan may not allow you to keep it there.</li>
-						<li>Former employer will control:
-                                <ul>
-                                    <li>Investment options.</li>
-                                    <li>Access to retirement savings.</li>
-                                </ul>
-                        </li>
-				</ul>
-		</div>
-		
-		<div id="moniqueFooter"></div>
-		<!-- end monique --> 
-		
-		<!-- begin victor -->
-		<div id="victorTop"></div>
-		<div class="imgBlock" id="victor1">
-				<h2>MEET<br>
-						VICTOR</h2>
-				<h3>Lost his job; managing&nbsp;bills; Preparing&nbsp;opportunities.</h3>
-				<h3>He needs money to pay his bills.</h3>
-				<h3>He’s taking cash out of his 401(k).</h3>
-		</div>
-		<div class="imgBlock" id="victor2">
-				<h2>ADVANTAGES</h2>
-				<ul>
-						<li>Immediate access to your money.</li>
-				</ul>
-				<h2>KEEP IN MIND</h2>
-				<ul>
-						<li>Potential 10% early distribution penalty.</li>
-						<li>20% income tax withholding.</li>
-						<li>Loss of tax-advantaged growth.</li>
-						<li>Potential impact on tax bracket.</li>
-				</ul>
-		</div>
-		
-		<div id="victorFooter"></div>
-		<!-- end victor --> 
-		
-		<!-- begin CTA -->
-		<div class="imgBlock" id="cta1">
-				<h2 id="ctaText1">Talk with a financial advisor<br>
-						at <span class="ctaStrong">Wells Fargo Advisors</span><br>
-						about your&nbsp;needs.<br>
-						<br>
-						Share how Wells Fargo<br>
-						can make the difference<br>
-						for others.</h2>
-				<div class="socialIcons"> 
-						<script>
-function fbs_click()
-{u="http://www.wellsfargomedia.com/401k/index.html";t="What's different about you?";window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}
-</script> 
-						<a id="social_fb" class="fb_link" onclick="return fbs_click()" href="#"><img class="socialButton" src="images/social_fb.jpg" alt="Share on Facebook" /></a> <a id="social_tw" href="http://twitter.com/share?text=When+your+career+changes%2C+what%27s+different+about+you+impacts+what+you+might+do+with+your+retirement+plan.+Learn+more.&url=http://www.wellsfargomedia.com/401k" target="_blank"><img class="socialButton" src="images/social_tw.jpg" alt="Share on Twitter" /></a> <a id="social_li" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.wellsfargomedia.com/401k&amp;title=401K/IRA Rollover Options&amp;summary=When your career changes, what's different about you impacts what you might do with your retirement plan. Learn more." target="_blank"><img class="socialButton" src="images/social_li.jpg" alt="Share on LinkedIn" /></a> </div>
-				<!--end socialIcons --> 
-		</div>
-		<!--end endSocial --> 
+ <div class="section section-1" data-anchor-target="#section-1 + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+  	<div class="image" data-anchor-target="#section-1 + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+    </div>
 </div>
-<!-- end CTA -->
+   
+<div class="section section-2" data-anchor-target="#section-2 + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+   	<div class="image" data-anchor-target="#section-2 + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+    </div>
+</div>
+   
+<div class="section section-3" data-anchor-target="#section-3 + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+   	<div class="image" data-anchor-target="#section-3 + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+    </div>
+</div>
 
-<div id="footer">
-		<p><a href="https://www.wellsfargoadvisors.com/disclosures/privacy.htm">Privacy</a> | <a href="https://www.wellsfargoadvisors.com/disclosures/security.htm">Security</a> | <a href="https://www.wellsfargoadvisors.com/disclosures/legal-disclosures.htm">Legal Disclosures</a> | <a href="https://www.wellsfargoadvisors.com">wellsfargoadvisors.com</a></p>
-		
-		<p><b>Investment and Insurance products:</b><br>
-		<table border="1" cellspacing="0" cellpadding="3" align="left" bordercolor="#000000">
-				<tr>
-						<td><b>NOT FDIC-Insured</b></td>
-						<td><b>No Bank Guarantee</b></td>
-						<td><b>MAY Lose value</b></td>
-				</tr>
-		</table>
-		</p>
-		<br>
-		 <p>Wells Fargo Advisors is the trade name used by two separate registered broker-dealers: Wells Fargo Advisors, LLC and Wells Fargo Advisors Financial Network, LLC, Members SIPC, non-bank affiliates of Wells Fargo & Company.</p>
-         <p>&copy; 2014 Wells Fargo Advisors, LLC. All rights reserved. ECG-1111891. CAR #0714-00564</p>
+<div class="section section-4" data-anchor-target="#section-4 + .gap" data-bottom-top="transform:translate3d(0px, 300%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+   	<div class="image" data-anchor-target="#section-4 + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+    </div>
 </div>
-</div>
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> --> 
-<script type="text/javascript">
-		$("#chapter1").fitText(2);
-		$("#chapter2").fitText(2);
-		$("#chapter3").fitText(2);
-		$("#chapter3reminders").fitText(2);
-		$("#chapter4").fitText(2);
-		$("#chapter5").fitText(2);
-		
-				
-        $(window).on('load resize', function(){  
-		var isMobile = {
-			  hasTouch: function() {
-				  return 'ontouchstart' in document.documentElement;
-			  },
-			  Android: function() {
-				  return navigator.userAgent.match(/Android/i);
-			  },
-			  BlackBerry: function() {
-				  return navigator.userAgent.match(/BlackBerry/i);
-			  },
-			  iOS: function() {
-				  return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-			  },
-			  Opera: function() {
-				  return navigator.userAgent.match(/Opera Mini/i);
-			  },
-			  Windows: function() {
-				  return navigator.userAgent.match(/IEMobile/i);
-			  },
-			  any: function() {
-				  return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-			  },
-			  ismobi: function() {
-				  return navigator.userAgent.match(/Mobi/i);
-			  }
-		  	};
-			var width = $(window).width();
-			if( isMobile.ismobi() ) { }
-			else if (width >= 640) { window.location="index.html" }
-		
-		})
-		
-</script>
+   
+<div id="skrollr-body">
+   	
+    <div id="section-1">
+    	<div class="container">
+      		<h1>READY. SET. SWING.</h1>
+       		 <h2>ARE YOU <strong>READY</strong> TO EXPERIENCE ONE OF THE FINEST SPORT VENUES IN THE&nbsp;SOUTHEAST?</h2>
+      		<p>Quail Hollow Club is one of the finest championship golf courses in the country. The course at Quail Hollow blends the imagination and craftsmanship of golf greats like George Cobb, Arnold Palmer, and Tom Fazio with a majestic landscape to create a golf experience that is as challenging as it is beautiful.</p>
+        </div>
+    </div>
+    
+    <div class="gap gap-100" style="background-image:url(images/mobile-ready.jpg);">
+    </div>
+    
+  <div id="section-2">
+   	<div class="container">
+   	  <h2>GET <strong>SET</strong> FOR GREAT PLAY.</h2>
+   	  <p>The Wells Fargo Championship traditionally draws a field of some of the most dynamic names in professional golf so you will be teamed with golfers who epitomize the best of the sport.</p>
+   	  <h3>Quick Reminders</h3>
+      <p>Check-in will be on the lower level of The Ballantyne Hotel &amp; Lodge before the Draft Party reception. If you are unable to attend the Draft Party, you may register Monday May 11th in the Quail Grill at Quail Hollow Club.</p> 
+
+<p>Your Monday Pro-Am credential will be issued to you at the Draft Party Registration. Please wear your credential at all times while on tournament grounds. The credential will be valid for tournament entry the entire week and provide you access to the Clubhouse and Quail Hollow Club grounds.</p> 
+
+<p>The play format will be One Best Ball Net and Par is Your Partner will be enforced. If you can no longer make a net par on your ball, you must pick up and proceed with your team as they finish the hole. Golf carts will not be used. </p>
+
+<p>Insta-Plak will be taking team photos on Pro-Am day and will distribute them on the 9 green and the 18 green at the conclusion of your round.</p>
+
+<p>If you have any questions, please contact Gwen Crow at 704-554-8029 or email her at <a href="mailto:gwen@wellsfargochampionship.com" target="_blank">gwen@wellsfargochampionship.com</a>.</p>
+    </div>
+  </div>
+     
+     <div class="gap gap-100" style="background-image:url(images/mobile-set.jpg);">
+     </div>
+     
+  <div id="section-3">
+   	<div class="container">
+      <h2>HERE IS WHERE YOUR <strong>SWING</strong> AND SKILL WILL BE PUT TO THE TEST</h2>
+            <p>Preview the Quail Hollow course and prepare yourself for what will be an unforgettable day on the links.</p>
+    
+            <img src="images/hole-previews/hole1.png" alt="Hole 1" width="80" height="130" />
+            <img src="images/hole-previews/hole2.png" alt="Hole 2" width="80" height="130" />
+            <img src="images/hole-previews/hole3.png" alt="Hole 3" width="80" height="130" />
+            <img src="images/hole-previews/hole4.png" alt="Hole 4" width="80" height="130" />
+            <img src="images/hole-previews/hole5.png" alt="Hole 5" width="80" height="130" />
+            <img src="images/hole-previews/hole6.png" alt="Hole 6" width="80" height="130" />
+            <img src="images/hole-previews/hole7.png" alt="Hole 7" width="80" height="130" />
+            <img src="images/hole-previews/hole8.png" alt="Hole 8" width="80" height="130" />
+            <img src="images/hole-previews/hole9.png" alt="Hole 9" width="80" height="130" />
+            <img src="images/hole-previews/hole10.png" alt="Hole 10" width="80" height="130" />
+            <img src="images/hole-previews/hole11.png" alt="Hole 11" width="80" height="130" />
+            <img src="images/hole-previews/hole12.png" alt="Hole 12" width="80" height="130" />
+            <img src="images/hole-previews/hole13.png" alt="Hole 13" width="80" height="130" />
+            <img src="images/hole-previews/hole14.png" alt="Hole 14" width="80" height="130" />
+            <img src="images/hole-previews/hole15.png" alt="Hole 15" width="80" height="130" />
+            <img src="images/hole-previews/hole16.png" alt="Hole 16" width="80" height="130" />
+            <img src="images/hole-previews/hole17.png" alt="Hole 17" width="80" height="130" />
+            <img src="images/hole-previews/hole18.png" alt="Hole 18" width="80" height="130" />
+            
+      <br>
+      <p>Duis rhoncus tristique sapien, id iaculis massa vestibulum eu. Sed blandit tortor non interdum rutrum. Sed accumsan, felis eget varius egestas, sem neque hendrerit arcu, vitae fringilla lorem augue ut dui. Integer ut ullamcorper leo. Aliquam odio metus, pharetra eget nisl eget, porta fringilla nisi. Quisque tincidunt ex ex, vel sodales massa egestas vel. Suspendisse facilisis arcu eu fermentum auctor. Fusce finibus maximus leo in ultricies.</p>
+    </div>
+  </div>
+  
+   <div class="gap gap-100" style="background-image:url(images/mobile-swing.jpg);">
+     </div>
+     
+  <div id="section-4">
+   	<div class="container">
+      <h2>TRUE.</h2>
+      <p>Duis rhoncus tristique sapien, id iaculis massa vestibulum eu. Sed blandit tortor non interdum rutrum. Sed accumsan, felis eget varius egestas, sem neque hendrerit arcu, vitae fringilla lorem augue ut dui. Integer ut ullamcorper leo. Aliquam odio metus, pharetra eget nisl eget, porta fringilla nisi. Quisque tincidunt ex ex, vel sodales massa egestas vel. Suspendisse facilisis arcu eu fermentum auctor. Fusce finibus maximus leo in ultricies.</p>
+    </div>
+  </div>
+      
+      <div class="gap gap-50" style="background-image:url(images/mobile-true.jpg);">
+      </div>
+      
+   </div><!-- end skrollr-body -->
+
+  <script type="text/javascript" src="js/skrollr.js"></script>
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+  </script>
+
+  <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-6c99970ade81e43be51fa877be0f7600.js"></script>
+
+  <script>
+    skrollr.init({
+    smoothScrolling: false,
+    mobileDeceleration: 0.004
+});
+    //@ sourceURL=pen.js
+  </script>
+
 </body>
+
 </html>
