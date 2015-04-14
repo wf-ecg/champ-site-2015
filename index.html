@@ -47,9 +47,9 @@
             
             <!-- ready.set.swing. text -->
             <div class="centered" data-200="opacity:0; top:0px;" data-600="opacity:1;top:0px;" data-2299="" data-2300="opacity:0;"></div>
-            <div class="centered" data-800="opacity:0; top:0px;" data-1200="opacity:1;top:0px;" data-1400="" data-1800="opacity:.4;" data-2000="" data-2400="opacity:.2" data-2700="opacity:0;"><h1><br><br>READY.</h1></div>
-            <div class="centered" data-1400="opacity:0; top:0px;" data-1800="opacity:1;top:0px;" data-2000="" data-2400="opacity:.4;" data-2500="" data-2800="opacity:0;"><h1><br><br><br>SET.</h1></div>
-            <div class="centered" data-2000="opacity:0; top:0px;" data-2400="opacity:1;top:0px;" data-2600="" data-2900="opacity:0; top:0px;"><h1><br><br><br><br>SWING.</h1></div>
+            <div class="centered" data-800="opacity:0; top:0px;" data-1200="opacity:1;top:0px;" data-1400="" data-1800="opacity:.4;" data-2000="" data-2400="opacity:.2" data-2700="opacity:0;"><h1 class="fitTextIntro"><br><br>READY.</h1></div>
+            <div class="centered" data-1400="opacity:0; top:0px;" data-1800="opacity:1;top:0px;" data-2000="" data-2400="opacity:.4;" data-2500="" data-2800="opacity:0;"><h1 class="fitTextIntro"><br><br><br>SET.</h1></div>
+            <div class="centered" data-2000="opacity:0; top:0px;" data-2400="opacity:1;top:0px;" data-2600="" data-2900="opacity:0; top:0px;"><h1 class="fitTextIntro"><br><br><br><br>SWING.</h1></div>
             
             
             <div class="centered" data-2700="opacity:0; top:100%" data-3000="opacity:1;top:40%" data-3400="opacity:1;top:30%">
@@ -160,11 +160,11 @@
 //                  window.location = "mobile.html";
 //              }
 //          });
-            
+            $(".fitTextIntro").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
             $(".fittext1").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
             $(".fittext2").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
             $(".fittext3").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
-            $(".fittext4").fitText(2.2, { minFontSize: '15px', maxFontSize: '75px' })
+            $(".fittext4").fitText(2.5, { minFontSize: '15px', maxFontSize: '75px' })
             $(".fittext5").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
             //$("h1").fitText(2.4, { minFontSize: '20px', maxFontSize: '100px' })
             //$("h2").fitText(2.4, { minFontSize: '15px', maxFontSize: '75px' })
