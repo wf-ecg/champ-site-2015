@@ -146,6 +146,7 @@ $(W.document).ready(function () {
         W.scrollTo(0, chapterPosition);
     });
 
+    $('.preloader').fadeOut(6666); // TODO: find a way to detect load of background images....
 });
 
 //$(window).on('resize', function () {
