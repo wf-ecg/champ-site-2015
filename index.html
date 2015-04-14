@@ -10,8 +10,6 @@
         <meta http-equiv="Expires" content="0" />
         <script>
             location.href.match(/\.com.*(\/[^\.\/]+)+$/) && (location.href += '/index.html')
-        </script>
-        <script>
             (function(d) {
                 var config = { kitId: 'vrs1lml', scriptTimeout: 3000 },h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";
                 },config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';
@@ -19,17 +17,14 @@
                 s.parentNode.insertBefore(tk,s)
             })(document);
         </script>
-        <script src="js/jquery-1.11.0.min.js"></script>
-        <script src="js/jquery.fittext.js"></script>
-        <script src="js/lightbox.js"></script>
-        <script src="js/ready.js"></script>
         <link href="//cloud.typography.com/6819872/783664/css/fonts.css" rel="stylesheet" />
         <link href="css/fixed-positioning.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
         <link href="css/lightbox.css" rel="stylesheet" />
         <!--[if lt IE 9]>
-                <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
-            <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+        <![endif]-->
+        <script src="js/jquery-1.11.0.min.js"></script>
     </head>
 
     <body>
@@ -172,18 +167,22 @@
             <div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
         </div><!--end #skrollr-body-->
 
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/ready.js"></script>
         <script src="js/skrollr.js"></script>
         <!--[if lt IE 9]>
-            <script type="text/javascript" src="js/skrollr.ie.js"></script>
-            <![endif]-->
+        <script type="text/javascript" src="js/skrollr.ie.js"></script>
+        <![endif]-->
+
         <script>
             //$(window).on('resize', function () {
-            //              var width = $(window).width(),
-            //              height = $(window).height();
-            //              if (width < 640) {
-            //                  window.location = "mobile.html";
-            //              }
-            //          });
+            //    var width = $(window).width(),
+            //    height = $(window).height();
+            //    if (width < 640) {
+            //    window.location = "mobile.html";
+            //    }
+            //});
             $(".fitTextIntro").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
             $(".fittext1").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
             $(".fittext2").fitText(2.2, { minFontSize: '20px', maxFontSize: '100px' })
