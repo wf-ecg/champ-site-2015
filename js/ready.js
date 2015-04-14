@@ -96,9 +96,6 @@ $( document ).ready(function() {
 	  });
 	  
 	  	//hide body and show preloader until all elements loaded
-  		$('body').addClass('visible');
-		$('div#preloaderImage').removeClass('visible');
-		
-		
+  		
 	 
 });

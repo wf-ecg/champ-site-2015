@@ -27,13 +27,20 @@ html, body {
 
 body {
 	background-color: #000;
-	visibility:hidden; /*body hidden until all scripts loaded*/
 }
 body.noscroll
 {
     position: fixed; 
     overflow-y: scroll;
     width: 100%;
+}
+
+.centered {
+	width:100%;
+	height:100%;
+	left:50%;
+	margin-left:-50%;
+	text-align:center;
 }
 
 ol, ul {
@@ -101,14 +108,6 @@ h4 {
 	margin:1em 0;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-weight: 600;
-}
-
-.centered {
-	width:100%;
-	height:100%;
-	left:50%;
-	margin-left:-50%;
-	text-align:center;
 }
 
 
