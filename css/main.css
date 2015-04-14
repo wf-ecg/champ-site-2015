@@ -482,3 +482,15 @@ h4 {
         line-height: 1.3em;
     }
 }
+
+.preloader {
+    background-color: white;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+.preloader img {
+    margin: auto; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+}
+
