@@ -85,6 +85,11 @@ h3 {
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-weight: 600;
 	line-height:1.2em;
+	text-shadow: 2px 2px 8px #000000;
+  	-moz-text-shadow: 2px 2px 8px #000000;
+  	-webkit-text-shadow: 2px 2px 8px #000000;
+ 	 filter: dropshadow(color=#cccccc, offx=2, offy=2);
+ 	 display: block; /* that's the important part */
 }
 h3:first-child {margin-top:0;}
 
