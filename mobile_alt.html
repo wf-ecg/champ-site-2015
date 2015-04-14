@@ -29,12 +29,12 @@
 }
 
 
-.section-50, .section-3 {
+.section-50, .section-4 {
   height: 50%;
   top: -50%;
 }
 
-.section-100, .section-1, .section-2 {
+.section-100, .section-1, .section-2, .section-3 {
   height: 100%;
   top: -100%;
 }
@@ -53,12 +53,12 @@
   display: block;
 }
 
-.image-50, .section-3 .image {
+.image-50, .section-4 .image {
   height: 200%;
   top: -50%;
 }
 
-.image-100, .section-1 .image, .section-2 .image {
+.image-100, .section-1 .image, .section-2 .image,  .section-3 .image {
   height: 100%;
   top: 0;
 }
@@ -102,6 +102,10 @@
   background: url(images/mobile-swing.jpg) no-repeat center;
 }
 
+.section-4 .image {
+  background: url(images/mobile-true.jpg) no-repeat center;
+}
+
   </style>
 
   <script>
@@ -128,8 +132,13 @@
     </div>
 </div>
    
-<div class="section section-3" data-anchor-target="#section-3 + .gap" data-bottom-top="transform:translate3d(0px, 300%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
-   	<div class="image" data-anchor-target="#section-3 + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+<div class="section section-3" data-anchor-target="#section-3 + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+   	<div class="image" data-anchor-target="#section-3 + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+    </div>
+</div>
+
+<div class="section section-4" data-anchor-target="#section-4 + .gap" data-bottom-top="transform:translate3d(0px, 300%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+   	<div class="image" data-anchor-target="#section-4 + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);">
     </div>
 </div>
    
@@ -186,8 +195,18 @@
       <p>Duis rhoncus tristique sapien, id iaculis massa vestibulum eu. Sed blandit tortor non interdum rutrum. Sed accumsan, felis eget varius egestas, sem neque hendrerit arcu, vitae fringilla lorem augue ut dui. Integer ut ullamcorper leo. Aliquam odio metus, pharetra eget nisl eget, porta fringilla nisi. Quisque tincidunt ex ex, vel sodales massa egestas vel. Suspendisse facilisis arcu eu fermentum auctor. Fusce finibus maximus leo in ultricies.</p>
     </div>
   </div>
+  
+   <div class="gap gap-100" style="background-image:url(images/mobile-swing.jpg);">
+     </div>
+     
+  <div id="section-4">
+   	<div class="container">
+      <h2TRUE.</h2>
+      <p>Duis rhoncus tristique sapien, id iaculis massa vestibulum eu. Sed blandit tortor non interdum rutrum. Sed accumsan, felis eget varius egestas, sem neque hendrerit arcu, vitae fringilla lorem augue ut dui. Integer ut ullamcorper leo. Aliquam odio metus, pharetra eget nisl eget, porta fringilla nisi. Quisque tincidunt ex ex, vel sodales massa egestas vel. Suspendisse facilisis arcu eu fermentum auctor. Fusce finibus maximus leo in ultricies.</p>
+    </div>
+  </div>
       
-      <div class="gap gap-50" style="background-image:url(images/mobile-swing.jpg);">
+      <div class="gap gap-50" style="background-image:url(images/mobile-true.jpg);">
       </div>
       
    </div><!-- end skrollr-body -->
