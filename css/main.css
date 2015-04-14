@@ -143,7 +143,9 @@ h4 {
 	min-width:250px;
 }
 #navLeft > span {
+	display: inline-block;
 	margin:0px 4%;
+	padding-top:6px;
 	font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
 	font-weight:600;
 	font-size:11px;
