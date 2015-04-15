@@ -224,23 +224,22 @@ h4 {
     transform-origin: 0 0;
 }
 #intro {
-    background-image: url('../images/bkgd-intro.jpg');
     height: 100%;
     left: 50%;
     margin-left: -50%;
     width: 100%;
 }
 #intro-initial {
-    background-image: url('../images/swing2.jpg');
+    background-image: url('../images/swing2.png');
 }
 #intro-ready {
-    background-image: url('../images/swing1.jpg');
+    background-image: url('../images/swing1.png');
 }
 #intro-set {
-    background-image: url('../images/swing3.jpg');
+    background-image: url('../images/swing3.png');
 }
 #intro-swing {
-    background-image: url('../images/swing4.jpg');
+    background-image: url('../images/swing4.png');
 }
 #holes {
     font-size: 150%;
