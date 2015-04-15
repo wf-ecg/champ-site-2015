@@ -174,5 +174,8 @@ $(W.document).ready(function () {
         minFontSize: '20px',
         maxFontSize: '100px'
     });
-
+    /// HACK close the lightbox
+    $(window).on('scroll', function () {
+        $('.lb-close').click();
+    });
 });
