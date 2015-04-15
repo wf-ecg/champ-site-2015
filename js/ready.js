@@ -146,9 +146,13 @@ $(W.document).ready(function () {
         W.scrollTo(0, chapterPosition);
     });
 
-    $('.holePreview img').eq(0).on('load', function () {
-        $('.preloader').fadeOut(666);
-    });
+    if ('\v'==='v') { // using crap browser
+        $('.preloader').fadeOut(6666);
+    } else {
+        $('.holePreview img').eq(0).on('load', function () {
+            $('.preloader').fadeOut(666);
+        });
+    }
 
     $('.fitTextIntro').fitText(2.2, {
         minFontSize: '20px',
@@ -174,5 +178,8 @@ $(W.document).ready(function () {
         minFontSize: '20px',
         maxFontSize: '100px'
     });
-
+    /// HACK close the lightbox
+    $(window).on('scroll', function () {
+        $('.lb-close').click();
+    });
 });

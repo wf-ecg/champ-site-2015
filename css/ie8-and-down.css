@@ -1,7 +1,9 @@
 h3 {
     color: #fff;
     display: block;
-    filter: dropshadow(color=#000,offx=1,offy=1);
+    text-shadow: none;
+    filter: dropshadow(color=#000000, offx=1, offy=2),alpha(opacity=40);
+    /*filter:progid:DXImageTransform.Microsoft.Glow(Color=black,Strength=1), alpha(opacity=40);*/
 }
 .infobox {
     margin-left: 0;
