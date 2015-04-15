@@ -146,41 +146,33 @@ $(W.document).ready(function () {
         W.scrollTo(0, chapterPosition);
     });
 
-    $('.preloader').fadeOut(6666); // TODO: find a way to detect load of background images....
-});
+    $('.holePreview img').eq(0).on('load', function () {
+        $('.preloader').fadeOut(666);
+    });
 
-//$(window).on('resize', function () {
-//    var width = $(window).width(),
-//    height = $(window).height();
-//    if (width < 640) {
-//    window.location = 'mobile.html';
-//    }
-//});
+    $('.fitTextIntro').fitText(2.2, {
+        minFontSize: '20px',
+        maxFontSize: '100px'
+    });
+    $('.fittext1').fitText(2.2, {
+        minFontSize: '20px',
+        maxFontSize: '100px'
+    });
+    $('.fittext2').fitText(2.2, {
+        minFontSize: '20px',
+        maxFontSize: '100px'
+    });
+    $('.fittext3').fitText(2.2, {
+        minFontSize: '20px',
+        maxFontSize: '100px'
+    });
+    $('.fittext4').fitText(2.5, {
+        minFontSize: '15px',
+        maxFontSize: '75px'
+    });
+    $('.fittext5').fitText(2.2, {
+        minFontSize: '20px',
+        maxFontSize: '100px'
+    });
 
-$('.fitTextIntro').fitText(2.2, {
-    minFontSize: '20px',
-    maxFontSize: '100px'
 });
-$('.fittext1').fitText(2.2, {
-    minFontSize: '20px',
-    maxFontSize: '100px'
-});
-$('.fittext2').fitText(2.2, {
-    minFontSize: '20px',
-    maxFontSize: '100px'
-});
-$('.fittext3').fitText(2.2, {
-    minFontSize: '20px',
-    maxFontSize: '100px'
-});
-$('.fittext4').fitText(2.5, {
-    minFontSize: '15px',
-    maxFontSize: '75px'
-});
-$('.fittext5').fitText(2.2, {
-    minFontSize: '20px',
-    maxFontSize: '100px'
-});
-
-//$('h1').fitText(2.4, { minFontSize: '20px', maxFontSize: '100px' })
-//$('h2').fitText(2.4, { minFontSize: '15px', maxFontSize: '75px' })
