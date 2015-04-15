@@ -179,7 +179,11 @@ $(W.document).ready(function () {
         maxFontSize: '100px'
     });
     /// HACK close the lightbox
-    $(window).on('scroll', function () {
+    $(W).on('scroll', function () {
         $('.lb-close').click();
     });
+    /// Separate man from beast
+    if (/Trident/.test(W.navigator.userAgent)) {
+        $('html').addClass('msie');
+    }
 });
