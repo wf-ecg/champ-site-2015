@@ -492,5 +492,6 @@ h4 {
 }
 .preloader img {
     margin: auto; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+    top: -99px; /* nudge loader above the "SCROLL DOWN" splash info */
 }
 
