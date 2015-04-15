@@ -33,11 +33,11 @@
             <div id="intro" data-0="opacity:.2;top:0%;" data-300="opacity:1" data-1299="" data-3400="opacity:1; top:0%;" data-3700="opacity:0;top:-100%;">
 
                 <!-- ready.set.swing. animation -->
-                <div class="centered" id="intro-initial" data-200="opacity:0; top:0px;" data-600="opacity:1" data-800="" data-1200="opacity:1;" data-2599="" data-2600="opacity:0;"></div>
-                <div class="centered" id="intro-ready" data-800="opacity:0; top:0px;" data-1200="opacity:1" data-1400="" data-1800="opacity:1;" data-2599="" data-2600="opacity:0;"></div>
-                <div class="centered" id="intro-set" data-1400="opacity:0; top:0px;" data-1800="opacity:1" data-2000="" data-2400="opacity:1;" data-2599="" data-2600="opacity:0;"></div>
+                <div class="centered" id="intro-initial" data-200="opacity:0; top:0px;" data-600="opacity:1" data-800="" data-1200="opacity:0;"></div>
+                <div class="centered" id="intro-ready" data-800="opacity:0; top:0px;" data-1200="opacity:1" data-1400="" data-1800="opacity:0;"></div>
+                <div class="centered" id="intro-set" data-1400="opacity:0; top:0px;" data-1800="opacity:1" data-2000="" data-2400="opacity:0;"></div>
                 <div class="centered" id="intro-swing" data-2000="opacity:0; top:0px;" data-2400="opacity:1;top:0px;" data-2600="" data-2900="opacity:0; top:0px;"></div>
-               
+
                 <!-- ready.set.swing. text -->
                 <div class="centered" data-200="opacity:0; top:0px;" data-600="opacity:1;top:0px;" data-2600="" data-2900="opacity:0;"></div>
 
@@ -130,15 +130,9 @@
                  data-5200="bottom:-5px;opacity:.8;left:0px;margin-left:0%"
                  data-7800="bottom:-5px;left:-3740px; margin-left:100%;"
                  data-8100="bottom:200px;opacity:0;left:-3740px; margin-left:100%;">
-                <script>
-                    var i;
-                    for (i = 1; i < 19; i++) {
-                        document.write('<div class="holePreview"><a href="images/hole-detail/detail_'
-                            + i + '.png" data-lightbox="courseholes" data-title="Hole'
-                            + i + '"><img src="images/hole-previews/hole'
-                            + i + '.png" /></a></div>');
-                    }
-                </script>
+                <div class="courseholes">
+                    <!-- insert from $.ready -->
+                </div>
             </div><!-- end holes -->
 
 
