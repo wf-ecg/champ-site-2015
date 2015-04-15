@@ -113,7 +113,7 @@ h4 {
 }
 #header {
     background-color: #bb0826;
-    background-image: url(../images/bannerBG.png);
+    background-image: url('../images/bannerBG.png');
     background-repeat: repeat-x;
     color: #fff;
     height: 60px;
@@ -282,6 +282,8 @@ h4 {
     -webkit-background-size: cover;
     -webkit-box-sizing: border-box;
     -webkit-transform-origin: 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
     box-sizing: border-box;
@@ -294,19 +296,18 @@ h4 {
     width: 100%;
 }
 #ready {
-    background: url(../images/bkgd-ready.jpg) no-repeat center;
+    background-image: url('../images/bkgd-ready.jpg');
 }
 #set {
-    background: url(../images/bkgd-set.jpg) no-repeat center;
+    background-image: url('../images/bkgd-set.jpg');
 }
 #swing {
-    background: url(../images/bkgd-swing.jpg) no-repeat top;
+    background-image: url('../images/bkgd-swing.jpg');
+    background-position: top;
 }
-#true {
-    background: url(../images/bkgd-true.jpg) no-repeat bottom;
-}
-#close {
-    background: url(../images/bkgd-true.jpg) no-repeat bottom;
+#true,#close {
+    background-image: url('../images/bkgd-true.jpg');
+    background-position: bottom;
 }
 #ready h2,#set h2,#swing h2,#true h2,#close h2 {
     display: block;
