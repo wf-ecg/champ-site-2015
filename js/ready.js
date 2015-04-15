@@ -146,10 +146,13 @@ $(W.document).ready(function () {
         W.scrollTo(0, chapterPosition);
     });
 
-    //$('.holePreview img').eq(0).on('load', function () {
-    //   $('.preloader').fadeOut(666);
-    //});
-    $('.preloader').fadeOut(6666); // TODO: find a way to detect load of background images....
+    if ('\v'==='v') { // using crap browser
+        $('.preloader').fadeOut(6666);
+    } else {
+        $('.holePreview img').eq(0).on('load', function () {
+            $('.preloader').fadeOut(666);
+        });
+    }
 
     $('.fitTextIntro').fitText(2.2, {
         minFontSize: '20px',
