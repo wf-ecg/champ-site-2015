@@ -216,7 +216,7 @@ h4 {
     -o-transform-origin: 0 0;
     -webkit-box-sizing: border-box;
     -webkit-transform-origin: 0 0;
-    background: url('../images/bkgd-intro.jpg') no-repeat bottom;
+    background: url('../images/bkgd-intro.jpg') no-repeat center;
     background-size: 100%;
     background-size: cover;
     box-sizing: border-box;
@@ -231,10 +231,10 @@ h4 {
     width: 100%;
 }
 #intro-initial {
-    background-image: url('../images/swing1.png');
+    background-image: url('../images/swing2.png');
 }
 #intro-ready {
-    background-image: url('../images/swing2.png');
+    background-image: url('../images/swing1.png');
 }
 #intro-set {
     background-image: url('../images/swing3.png');
