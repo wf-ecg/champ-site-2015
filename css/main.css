@@ -400,7 +400,7 @@ h4 {
     right: 0;
     top: 0;
 }
-#closeShade {
+.closeShade {
     background-color: #000;
     height: 100%;
     left: 0;
