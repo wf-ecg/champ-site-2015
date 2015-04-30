@@ -103,11 +103,14 @@ h3 {
 }
 
 .gap {
-    background: transparent center no-repeat;
+    background: center no-repeat;
     background-size: cover;
 }
+.v-go .gap {
+    background: transparent center no-repeat;
+}
 
-.skrollr .gap {
+.v-go.skrollr .gap {
     background: transparent !important;
 }
 
@@ -134,6 +137,6 @@ h3 {
 .section-4 .image {
     background: url('../images/mobile-true.jpg') no-repeat center;
 }
-.container {
+.v-go .container {
     padding-bottom:15px;
 }
