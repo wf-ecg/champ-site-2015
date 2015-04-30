@@ -151,9 +151,9 @@ $(W.document).ready(function () {
         var i, div = $('.courseholes');
 
         for (i = 1; i < 19; i++) {
-            div.append('<div class="holePreview"><a href="images/hole-detail/detail_'
+            div.append('<div class="holePreview"><a href="../../images/hole-detail/detail_'
                 + i + '.png" data-lightbox="courseholes" data-title="Hole'
-                + i + '"><img src="images/hole-previews/hole'
+                + i + '"><img src="../../images/hole-previews/hole'
                 + i + '.png" /></a></div>');
         }
         $('.holePreview img').first().on('load', function () {

@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    font-family: "myriad-pro", sans-serif;
+}
+h1, h2 {
+    font-family: 'Archer SSm A', 'Archer SSm B', Georgia, serif;
+    font-weight: 700;
+}
+h2 {
+    font-size:1.7em;
+}
+h3 {
+    font-size:120%;
+}
+.nowrap {
+    white-space:nowrap;
+}
+#header {
+    width:100%;
+    height:60px;
+    background-color:#bb0826;
+    background-image:url('../images/bannerBG.png');
+    background-repeat:repeat-x;
+    color:#fff;
+    z-index:9999;
+    text-align:center;
+    position:fixed;
+    top:0px;
+}
+#header img {
+    width:280px;
+    height:48px;
+    margin-top:6px;
+}
+#downloadLink {
+    background: #ec1c29;
+    background-image: -webkit-linear-gradient(top, #ec1c29, #ae1e23);
+    background-image: -moz-linear-gradient(top, #ec1c29, #ae1e23);
+    background-image: -ms-linear-gradient(top, #ec1c29, #ae1e23);
+    background-image: -o-linear-gradient(top, #ec1c29, #ae1e23);
+    background-image: linear-gradient(to bottom, #ec1c29, #ae1e23);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 110%;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.skrollr-desktop body {
+    height: 100% !important;
+}
+
+.section {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-50, .section-4 {
+    height: 50%;
+    top: -50%;
+}
+
+.section-100, .section-1, .section-2, .section-3 {
+    height: 100%;
+    top: -100%;
+}
+
+.image {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.image.skrollable-between {
+    display: block;
+}
+
+.image-50, .section-4 .image {
+    height: 300%;
+    top: -60%;
+}
+
+.image-100, .section-1 .image, .section-2 .image,  .section-3 .image {
+    height: 100%;
+    top: 0;
+}
+
+.no-skrollr .section {
+    display: none !important;
+}
+
+#skrollr-body {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+}
+
+.gap {
+    background: center no-repeat;
+    background-size: cover;
+}
+.v-go .gap {
+    background: transparent center no-repeat;
+}
+
+.v-go.skrollr .gap {
+    background: transparent !important;
+}
+
+.gap-50 {
+    height: 50%;
+}
+
+.gap-100 {
+    height: 100%;
+}
+
+.section-1 .image {
+    background: url('../images/mobile-ready.jpg') no-repeat center;
+}
+
+.section-2 .image {
+    background: url('../images/mobile-set.jpg') no-repeat center;
+}
+
+.section-3 .image {
+    background: url('../images/mobile-swing.jpg') no-repeat center;
+}
+
+.section-4 .image {
+    background: url('../images/mobile-true.jpg') no-repeat center;
+}
+.v-go .container {
+    padding-bottom:15px;
+}
